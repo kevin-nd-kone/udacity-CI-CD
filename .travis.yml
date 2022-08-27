@@ -19,5 +19,5 @@ script:
 
 # task must be execute after process run successfully
 after_success:
-  # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push YOUR_DOCKER_HUB/simple-node
